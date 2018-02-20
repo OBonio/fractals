@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MyLacuna Fractal Generator</title>
+  <meta charset="UTF-8">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@MehINTP">
+  <meta name="twitter:creator" content="@MehINTP">
+  <meta name="twitter:title" content="MyLacuna Fractal Generator">
+  <meta name="twitter:description" content="Just an HTML 5 fractal generator for fun">
+  <meta name="twitter:image" content="http://www.mylacuna.co.uk/imgs/card.png">
+  <meta property="og:url" content="http://www.mylacuna.co.uk/">
+  <meta property="og:title" content="Fractal generator">
+  <meta property="og:description" content="A fractal generating HTML 5 website.">
+  <meta property="og:image" content="http://www.mylacuna.co.uk/imgs/card.png?$args">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/fractaldrawer.js"></script>
+  <script src="js/jscolor.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/fractals.css">
+</head>
+<body onload="init();">
+  <div id="myAlert"></div>
+  <div id="params">
+    <input type="text" id="urlCopy" style="opacity:0; position: absolute; z-index: -99;">
+    <a href="javascript:shareFractal();"><img id="share" src="imgs/share-icon.png" title="Share" alt="Reset"></a><br/>
+    <a href="javascript:drawFractal();"><img id="reset" src="imgs/refresh-icon.png" title="Reset" alt="Reset"></a><br/>
+    <a href="javascript:randomiseColors();"><img id="reset" src="imgs/shuffle.png" title="Random colors" alt="Reset"></a><br/>
+    <div id="pallette"></div>
+  </div>
+  <div class="ghost-select"><span></span></div>
+  <div id="cxcy"></div>
+  <canvas id="fractal" width="1" height="1"></canvas>
+</body>
+</html>
