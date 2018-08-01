@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: mylacuna
-        image: obonio/mylacuna:latest
+        image: obonio/mylacuna.co.uk:v1
         ports:
         - containerPort: 80
 
