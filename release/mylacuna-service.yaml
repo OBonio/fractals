@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mylacuna-deployment
+  labels:
+    app: mylacuna
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: mylacuna
+  template:
+    metadata:
+      labels:
+        app: mylacuna
+    spec:
+      containers:
+      - name: mylacuna
+        image: obonio/mylacuna:latest
+        ports:
+        - containerPort: 80
+
+
