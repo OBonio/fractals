@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  mylacuna:
+    image: mylacuna
+    build: .
+    ports:
+      - 80
