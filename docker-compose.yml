@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   mylacuna:
-    image: mylacuna
+    image: obonio/mylacuna
     build: .
     ports:
       - 80
